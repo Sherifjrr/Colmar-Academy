@@ -237,9 +237,12 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    html {
+        width: 100%;
+        height: auto;
+    }
     body {
         font-size: 16px;
-        overflow-x: hidden;
     }
     .mid, footer{
         display: block;
@@ -309,9 +312,10 @@ footer {
         margin: 16px
     }
     .information {
-        width: 100%;
+        width: 90%;
+        margin-left: 16px;
         margin-bottom: 16px;
-        padding-left: 16px;
+        
     }
     .mid-two {
         background-color: #F5F4F5;
@@ -333,17 +337,7 @@ footer {
     }
     .info video {
        
-        width: 150%;
+        width: 140%;
     }
-
-
-
-
-
-
-
-
-   
-     
 }
 
