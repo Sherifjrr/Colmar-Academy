@@ -284,7 +284,10 @@ footer {
         background-color: #9B9B9B;
     }
     
-    .info-imgs, .info img {
+    .info img {
+        display: none;
+    }
+    .info-imgs {
         display: none;
     }
     .cards {
@@ -299,7 +302,7 @@ footer {
         justify-content: center;
         display: flex;
         width: 100%;
-        ;
+        
     }
     .big img {
         width: 93%;
