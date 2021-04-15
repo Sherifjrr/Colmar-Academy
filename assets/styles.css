@@ -1,12 +1,13 @@
 html, body{
     padding: 0;
     margin: 0;
+    color:#4A4A4A;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Roboto', sans-serif; 
     font-size: 16px;
-  
 }
 
 
@@ -14,14 +15,11 @@ nav {
     height: 64px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content:space-between ;
     font-family: 'Roboto', sans-serif;
     background-color:white ;
     position: sticky;
     top: 0;
-    
-    
 }
 
 nav a {
@@ -31,12 +29,14 @@ nav a {
     font-size: 20px;
     color: dimgray;
 }
-
-.navlef :hover {
+.navmid {
+    display: none;
+}
+.navrig :hover {
     color: maroon;
 }
 
-.navrig {
+.navlef {
     display: flex;
     margin-left: 24px;
     font-size: 25px;
@@ -44,16 +44,16 @@ nav a {
     color: gray;
     
 }
-.navrig p {
+.navlef p {
     margin: 0;
 }
 
-.navlef {
+.navrig {
     margin-right: 24px ;
     
 }
 
-.navrig .bold {
+.navlef .bold {
     font-weight: bold;
     color: black;
 }
@@ -80,7 +80,8 @@ nav a {
 .learn h1 {
     font-size: 50px;
     font-weight: bolder;
-    margin: 0 30px 0 0 ;
+    margin: 0 30px 20px 0 ;
+    padding-right: 60px;
 }
 .learn p {
     font-size: 25px;
@@ -142,6 +143,9 @@ nav a {
 .cards :hover {
     background-color: #EAEBEC;
 }
+.big {
+    display: none;
+}
 
 .info-imgs {
     width: 35%;
@@ -159,12 +163,13 @@ nav a {
     margin-left: 35px;
     
 }
-
 .information h2, p, a {
     margin:0 0 10px 0px;
     text-decoration: none;
 }
-
+.information a {
+    color: #4B93DF;
+}
 .mid-two {
     background-color: #EAEBEC;
     display: flex;
@@ -172,13 +177,13 @@ nav a {
     flex-direction: column;
 }
 .mid-two h1 {
-    margin-top: 32px;
+    margin: 32px 10px;
 }
 
 .catagories {
     display: flex;
     flex-wrap: wrap;
-    margin: 32px 72px;
+    margin: 0 72px 32px 72px;
     justify-content: center;
 }
 
@@ -230,3 +235,112 @@ footer {
     border-top: lightgrey 1px solid;
     padding: 16px 24px;
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    .mid, footer{
+        display: block;
+    }
+    nav {
+        justify-content: center;
+        border-bottom: #4A4A4A 1px solid;
+    }
+    .navlef,.navrig {
+        display: none;
+    }
+    .navmid {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin : 0 20px
+    }
+    .navmid img {
+        width: 30px;
+        height: auto;
+        display: flex;
+        
+    }
+    .first{
+        display: block;
+        width: 100%;
+    }
+    .first img {
+        width: 100%;
+        margin: 0 0 32px 0;
+        height:auto ;        
+    }
+    .learn h1  {
+        font-size: 40px;
+    }
+    .learn p {
+        font-size: 20px;
+        margin-right: 60px;
+    }
+    .learn button {
+        margin-bottom: 32px;
+        background-color: #9B9B9B;
+    }
+    
+    .mid.info, .info-imgs {
+        display: none;
+    }
+    .cards {
+        padding: 0;
+        width: 100%;
+    }
+    .info-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+    .big {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        ;
+    }
+    .big img {
+        width: 93%;
+        margin: 16px
+    }
+    .information {
+        width: 100%;
+        margin-bottom: 16px;
+        padding-left: 16px;
+    }
+    .mid-two {
+        background-color: #F5F4F5;
+    }
+    .cat img, .cat span, .cat p {
+        display: none;
+    }
+    .cat {
+        background-color: #D8D8D8;
+        height: auto;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .info h1, .info p, .ubran .cards{
+        display: none ;
+    }
+    .ubran {
+        width: 100%;
+    }
+    .info video {
+       
+        width: 150%;
+    }
+
+
+
+
+
+
+
+
+   
+     
+}
+
